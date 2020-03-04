@@ -1,0 +1,37 @@
+{
+  "name": "chat-api",
+  "version": "1.0.0",
+  "main": "build/server.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "build:watch": "tsc -w -p tsconfig.json",
+    "start:dev": "NODE_ENV=development nodemon build/server.js",
+    "start:prod": "NODE_ENV=production nodemon build/server.js",
+    "start:production": "concurrently \"yarn build:watch\" \"yarn start:prod\"",
+    "start": "concurrently \"yarn build:watch\" \"yarn start:dev\"",
+    "codegen": "graphql-codegen --config codegen.yml"
+  },
+  "dependencies": {
+    "apollo-server": "^2.8.1",
+    "apollo-server-express": "^2.8.1",
+    "expo-server-sdk": "^3.4.0",
+    "graphql": "^14.4.2",
+    "graphql-toolkit": "^0.7.5",
+    "lodash": "^4.17.15",
+    "mongoose": "^5.6.9"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^1.8.1",
+    "@graphql-codegen/introspection": "1.8.1",
+    "@graphql-codegen/typescript": "1.8.1",
+    "@graphql-codegen/typescript-resolvers": "1.8.1",
+    "@types/lodash": "^4.14.144",
+    "@types/mongoose": "^5.5.19",
+    "@types/socket.io": "^2.1.4",
+    "concurrently": "^5.1.0",
+    "nodemon": "^1.19.1",
+    "typescript": "^3.6.3"
+  }
+}

@@ -1,0 +1,19 @@
+overwrite: true
+schema: "http://localhost:5000/graphql"
+documents: null
+generates:
+  src/generated/graphql.ts:
+    plugins:
+      - "typescript"
+      - "typescript-resolvers"
+    config:
+      useIndexSignature: true
+      scalars:
+        NEString: string
+        Timestamp: number
+      namingConvention:
+        enumValues: change-case#upperCase
+  ./graphql.schema.json:
+    plugins:
+      - "introspection"
+      

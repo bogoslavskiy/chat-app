@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs", 
+    "lib": [ 
+      "es2017",
+      "esnext.array",
+      "esnext.asynciterable"
+    ],
+    "sourceMap": true,
+    "allowJs": false,
+    "outDir": "build",
+    "rootDir": "src",
+    "removeComments": true,
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": false,
+    "allowSyntheticDefaultImports": true,
+    "strictPropertyInitialization": true,
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
+    "importHelpers": true
+  },
+  "exclude": [ "node_modules/**/*", "build", "dist" ],
+  "include": [ "src/**/*.ts" ]
+}
