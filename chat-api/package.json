@@ -14,7 +14,7 @@
     "codegen": "graphql-codegen --config codegen.yml"
   },
   "dependencies": {
-    "apollo-server": "^2.8.1",
+    "apollo-server": "^2.14.2",
     "apollo-server-express": "^2.8.1",
     "expo-server-sdk": "^3.4.0",
     "graphql": "^14.4.2",
