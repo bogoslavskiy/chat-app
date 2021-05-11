@@ -19,7 +19,7 @@
     "expo-server-sdk": "^3.4.0",
     "graphql": "^14.4.2",
     "graphql-toolkit": "^0.7.5",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "mongoose": "^5.6.9"
   },
   "devDependencies": {
