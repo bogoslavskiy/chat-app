@@ -18,7 +18,7 @@
     "crypto-js": "^4.0.0",
     "expo": "~36.0.0",
     "graphql": "^14.6.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "react": "~16.9.0",
     "react-dom": "~16.9.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-36.0.0.tar.gz",
